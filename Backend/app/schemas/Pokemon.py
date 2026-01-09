@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 from typing import List
 
-class PokemonResquese(BaseModel):
+class PokemonRequests(BaseModel):
     query: str
 
 class PokemonStat(BaseModel):
