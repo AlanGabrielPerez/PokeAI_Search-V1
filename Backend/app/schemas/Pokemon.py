@@ -4,7 +4,7 @@ from typing import List
 class PokemonRequests(BaseModel):
     query: str
 
-class PokemonStat(BaseModel):
+class PokemonStats(BaseModel):
     hp: int
     attack: int
     defense: int
@@ -16,11 +16,11 @@ class PokemonStat(BaseModel):
 class PokemonDetail(BaseModel):
     
     name: str
-    img: str
-    type: List[str]
+    image: str
+    types: List[str]
     abilities: List[str]
-    stats: PokemonStat
+    stats: PokemonStats
     
-class SearchPokemonResponse(BaseModel):
+class SearchResponse(BaseModel):
     total: int
-    pokemon: List[PokemonDetail]
+    pokemons: List[PokemonDetail]
